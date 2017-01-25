@@ -64,7 +64,7 @@ body a {
   font-weight: 100;
   text-transform: uppercase;
   text-align: center;
-  color: #27AFCF;
+  color: #FFF;
 }
 
 .service {
@@ -233,7 +233,6 @@ body a {
   margin: 0 auto;
   margin-top: -2%;
   padding: 0;
-  color: #FFF;
 }
 
 #index_file > #index_body > p {
@@ -273,6 +272,12 @@ body a {
   margin: 1% auto;
 }
 
+#about_body {
+  width: 100%;
+  padding: 4% 0;
+  padding-bottom: 2%;
+  background-color: #636363;
+}
 
 
 /******************************************************************************/
