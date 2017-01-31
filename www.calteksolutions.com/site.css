@@ -39,7 +39,7 @@ body a {
 .nav a {
   margin: auto;
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.10rem;
   color: #27AFCF;
 }
 
@@ -193,12 +193,11 @@ body a {
 #index_nav a {
   margin: auto;
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.10rem;
   color: #27AFCF;
 }
 
 #about_file .post_subheader {
-  /*font-size: 1.25em;*/
   color: #FFF;
 }
 
@@ -269,9 +268,78 @@ body a {
   width: 100%;
   padding: 4% 0;
   padding-bottom: 2%;
-  background-color: #636363;
+  background-color: #C7C7C7;
 }
 
+#bio_resume {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+
+#bio_square {
+  width: 350px;
+  height: 565px;
+  margin-top: -8%;
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: lighter;
+  font-size: .95rem;
+  border-radius: 5px;
+  color: #636363;
+  background-color: #FFF;
+}
+
+#bio_square img {
+  margin: 0 auto;
+  margin-bottom: 10%;
+  padding: 0;
+  border-radius: 5px;
+}
+
+#bio_square h5 {
+  font-size: 1.25rem;
+  color: #27AFCF;
+}
+
+#bio_square h6 {
+  margin-bottom: 5%;
+}
+
+#bio_square p {
+  margin-bottom: 2%;
+  font-weight: lighter;
+}
+
+#bio_square p, h5, h6{
+  margin: 0 10%;
+  padding: 0;
+}
+
+#resume_links {
+  margin: auto 0;
+}
+
+#about_file .button {
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+#about_file .post_subheader {
+  color: #27AFCF;
+}
+
+#about_file .post_header {
+  width: 45%;
+  color: #FFF;
+}
+
+#about_file .post_paragraph {
+  width: 40%;
+}
 
 /******************************************************************************/
 /*                                   FOOTER                                   */
