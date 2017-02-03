@@ -201,6 +201,10 @@ body a {
   color: #FFF;
 }
 
+#contact_file .post_header {
+  color: #FFF;
+}
+
 
 /******************************************************************************/
 /*                                   BODY                                     */
@@ -340,6 +344,34 @@ body a {
 #about_file .post_paragraph {
   width: 40%;
 }
+
+#contact_body {
+  width: 100%;
+  padding: 4% 0;
+  padding-bottom: 2%;
+  background-color: #C7C7C7;
+}
+
+#contact_form {
+  width: 650px;
+  height: 550px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+#contact_form input {
+  margin: auto;
+  width: 350px;
+  height: 1px;
+}
+
+#contact_form p {
+  font-size: 1.256rem;
+  font-weight: 100;
+
+
+
 
 /******************************************************************************/
 /*                                   FOOTER                                   */
