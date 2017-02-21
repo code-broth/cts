@@ -362,14 +362,14 @@ body a {
 
 #contact_form input {
   margin: auto;
-  width: 350px;
-  height: 1px;
+  /*width: 350px;
+  height: 1px;*/
 }
 
-#contact_form p {
+#contact_form label {
   font-size: 1.256rem;
   font-weight: 100;
-
+}
 
 
 

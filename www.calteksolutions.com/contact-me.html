@@ -10,82 +10,87 @@
 <body id="contact_file">
 
     <div class="header">
-      <div class="nav">
-        <a href="index.html" class="blue_text">Home</a>
-        <a href="services.html" class="blue_text">Services</a>
-        <a href="about-me.html" class="blue_text">About Me</a>
-        <a href="contact-me.html" class="blue_text">Contact Me</a>
-      </div>
-      <h3 class="post_subheader">SCHEDULE AN APPOINTMENT</h3>
-      <h1 class="post_header">CONTACT ME</h1>
+        <div class="nav">
+            <a href="index.html" class="blue_text">Home</a>
+            <a href="services.html" class="blue_text">Services</a>
+            <a href="about-me.html" class="blue_text">About Me</a>
+            <a href="contact-me.html" class="blue_text">Contact Me</a>
+        </div>
+        <h3 class="post_subheader">SCHEDULE AN APPOINTMENT</h3>
+        <h1 class="post_header">CONTACT ME</h1>
     </div>
 
     <div id="contact_body">
-      <div id="contact_form">
-        <form>
-          <p>name: </p>
-          <input type="text">
-          <p>email: </p>
-          <input type="text">
-          <p><input type="checkbox"> i would like to recieve email updates</p>
-          <p>subject: </p>
-          <input type="text">
-          <p>message: </p>
-          <input type="text">
-        </form>
+        <div id="contact_form">
+            <form id="actual_contact_form" autocomplete="on" action="" method="post">
+                <label>name: <input type="text" name="name"></label><br>
+                <label>email: <input type="email" name="email"></label><br>
+                <label><input type="checkbox" value="true" name="doemailupdates"> I would like to recieve email updates.</label><br>
+                <label>subject: <input type="text" name="subject"></label><br>
+                <label>message: <input type="text" name="message"></label><br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <script>
+            //
+            // Ideally, this will replace the form with the server response
+            // instead of reloading the page. Andrew has not quite figured that
+            // out yet.
+            //
+            // var contact_form = document.getElementById('contact_form')
+            // var actual_contact_form = document.getElementById('actual_contact_form')
+            //
+            // contact_form.addEventListener('submit', function(event) {
+            //     var fd = new FormData(event.target);
+            //
+            //     contact_form.innerHTML = 'Sending'
+            //     post('/contact-me.html', fd)
+            //         .then(function(response) {
+            //             contact_form.innerHTML = response
+            //         }, function(err) {
+            //             contact_form.innerHTML = "Sorry, we ran into an error, but you can still contact us by email."
+            //         })
+            //
+            //     event.preventDefault()
+            //     return false
+            // })
+            //
+            // // sends a post request
+            // function post(uri, data) {
+            //     return new Promise(function(resolve, reject) {
+            //         var xhr = new XMLHttpRequest()
+            //         xhr.onreadystatechange = function() {
+            //             if (xhr.readyState === 4) { // 4 = Response from server has been completely loaded.
+            //                 if (xhr.status == 200 && xhr.status < 300) // http status between 200 to 299 are all successful
+            //                     resolve(xhr.responseText);
+            //                 else
+            //                     reject(xhr.status);
+            //             }
+            //         }
+            //         xhr.open("POST", uri)
+            //         xhr.send(data)
+            //     })
+            // }
+        </script>
 
-        <!-- <div class="form-row"><label class="form-label">Name: <span class="form-req">*</span></label><input type="text" name="name" class="form-value"></div>
-        <br>
-        <div class="form-row"><label class="form-label">Email: <span class="form-req">*</span></label><input type="text" name="email" class="form-value"><label class="form-label opt-in-label"><input type="checkbox" name="opt-in" class="opt-in-checkbox">Check here to receive email updates</label></div>
-        <br>
-        <div class="form-row"><label class="form-label">Subject: <span class="form-req">*</span></label><input type="text" name="subject" class="form-value"></div>
-        <br>
-        <div class="form-row"><label class="form-label">Message: <span class="form-req">*</span></label><textarea name="message" class="form-value"></textarea></div>
-        <br>
-        <div class="form-row"><input type="submit" value="Submit"></div> -->
-      </div>
-
-      <div>
-          <h1>GOOGLE MAP GOES HERE</h1>
-          <!-- <div>
-              <div class="map">
-                  <div id="publish-map-9079173e-11cb-4be9-a397-6e85cbb3d398" style="width: 100%; height: 100%" height="100%" scrolling="no"></div>
-              </div>
-          </div>
-          <script type="text/javascript">
-              require(['common/geo/mapGenerator'], function(mapGenerator) {
-                  var mapDiv = document.getElementById('publish-map-9079173e-11cb-4be9-a397-6e85cbb3d398');
-                  if ('True' === 'True') {
-                      mapGenerator.runPublishMode();
-                  } else {
-                      mapGenerator.runEditorMode();
-                  }
-                  mapGenerator.drawMap(mapDiv, 'Bellingham, WA 98229, USA', {
-                      zoom: 14
-                  });
-              });
-          </script> -->
-      </div>
-
-      <p>
-          <p>Currently Located in Bellingham, WA but we'll come to you!</p>
-          <p><span class="contact_field">Phone: </span><span class="phone">+1&nbsp;3605257015</span></p>
-          <p><span class="contact_field">E-mail: </span><a href="mailto:calvin.cox@hotmail.com">calvin.cox@hotmail.com</a></p>
-      </p>
-      <!-- <div style="display:none;"> Thank you for contacting us! If needed, you will hear back within 48-72 hours. </div> -->
-      <h3>LEARN MORE</h3>
-      <h2>SHOOT US An MESSAGE, Text, email or CALL<br></h2>
+        <p>
+            <p>Currently Located in Bellingham, WA but we'll come to you!</p>
+            <p><span class="contact_field">Phone: </span><span class="phone">+1&nbsp;3605257015</span></p>
+            <p><span class="contact_field">E-mail: </span><a href="mailto:calvin.cox@hotmail.com">calvin.cox@hotmail.com</a></p>
+        </p>
+        <h3>LEARN MORE</h3>
+        <h2>SHOOT US An MESSAGE, Text, email or CALL<br></h2>
     </div>
 
 
     <footer>
-      <div class="social">
-          <a href="https://www.facebook.com/"><img scr="img/facebook_icon.png"></a>
-          <a href="https://plus.google.com/"><img src="img/googleplus_icon.png"></a>
-          <a href="https://twitter.com/"><img scr="img/twitter_icon.png"></a>
-      </div>
-      <p>Free&nbsp;Support&nbsp;<span class="phone">+1&nbsp;3605257015</span></p>
-      <p id="copyrights">Copyrights &copy; CalTEK Solutions All Rights Reserved</p>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img scr="img/facebook_icon.png"></a>
+            <a href="https://plus.google.com/"><img src="img/googleplus_icon.png"></a>
+            <a href="https://twitter.com/"><img scr="img/twitter_icon.png"></a>
+        </div>
+        <p>Free&nbsp;Support&nbsp;<span class="phone">+1&nbsp;3605257015</span></p>
+        <p id="copyrights">Copyrights &copy; CalTEK Solutions All Rights Reserved</p>
     </footer>
 
 </body>
